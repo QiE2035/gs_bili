@@ -11,4 +11,4 @@ hook.exe: hook.cpp libshlwapi.a
 	x86_64-w64-mingw32-g++ -o bin/$@ $?
 
 main.dll: main.c libMinHook.a
-	x86_64-w64-mingw32-gcc -o bin/$@ $? -I .-shared
+	x86_64-w64-mingw32-gcc -o bin/$@ $? -I . -shared
